@@ -188,8 +188,8 @@
              cloudflaredetect($lwwww); 
              echo $lblue . $bold . "[iNFO] Robots File:$cln "; 
              robotsdottxt($reallink); 
-             echo "\n\n"; 
-             echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n"; 
+             echo "\n\n$cln";  
+              echo "\n\n$bold" . $blue  . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n"; 
              trim(fgets(STDIN, 1024)); 
              goto scanlist; 
            } 
