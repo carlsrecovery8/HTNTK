@@ -1,5 +1,5 @@
 <?php 
- //functions for RED HAWK 
+ //functions for HNTNK 
  function getTitle($url) { 
    $data = readcontents($url); 
    $title = preg_match('/<title[^>]*>(.*?)<\/title>/ims', $data, $matches) ? $matches[1] : null; 
@@ -92,7 +92,7 @@
      return $tcms; 
  } 
  function robotsdottxt($reallink){ 
-   $rbturl    = $reallink . "/robots.txt"; 
+   $rbturl    = $reallink . "robots.txt"; 
    $rbthandle = curl_init($rbturl); 
    curl_setopt($rbthandle, CURLOPT_SSL_VERIFYPEER, false); 
    curl_setopt($rbthandle, CURLOPT_RETURNTRANSFER, TRUE); 
