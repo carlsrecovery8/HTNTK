@@ -93,7 +93,6 @@
  } 
  function robotsdottxt($reallink){ 
    $rbturl    = $reallink . "/robots.txt";
-   $filename = $rbtdandle . "robots.txt";
    $rbthandle = curl_init($rbturl); 
    curl_setopt($rbthandle, CURLOPT_SSL_VERIFYPEER, false); 
    curl_setopt($rbthandle, CURLOPT_RETURNTRANSFER, TRUE); 
