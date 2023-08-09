@@ -92,7 +92,7 @@
      return $tcms; 
  } 
  function robotsdottxt($reallink){ 
-   $rbturl    = $reallink . "robots.txt"; 
+   $rbturl    = $reallink . "/robots.md"; 
    $rbthandle = curl_init($rbturl); 
    curl_setopt($rbthandle, CURLOPT_SSL_VERIFYPEER, false); 
    curl_setopt($rbthandle, CURLOPT_RETURNTRANSFER, TRUE); 
